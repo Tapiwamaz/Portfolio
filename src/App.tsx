@@ -1,21 +1,15 @@
 
 import { Analytics } from "@vercel/analytics/react";
-import "./App.css";
+import { Header } from "./components/Header";
+import { Landing } from "./components/Landing";
 
 function App() {
-
-
   return (
     <main>
-      <header>
-        <nav>
-          <ul className="navUL">
-            <li><a>Education</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section></section>
+      <Header/>
+      <section className="mid-section">
+        <Landing/>
+      </section>
       <footer></footer>
     </main>
   );

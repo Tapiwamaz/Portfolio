@@ -1,0 +1,22 @@
+header,
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header {
+  outline: 1px solid black;
+  padding: 0.25rem;
+}
+.header-ul {
+  gap: 1rem;
+  outline: black 1px solid;
+}
+
+.header-li {
+  list-style: none;
+}
+.nav-link, .social-link {
+    cursor: pointer;
+
+}
