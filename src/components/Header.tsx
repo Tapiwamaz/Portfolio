@@ -1,4 +1,7 @@
 import "./Header.css";
+import GithubIcon from "/Github.svg"; // Import the SVG file
+import LinkedIn from "/LinkedIn.svg";
+import Gmail from "/Gmail.svg";
 
 export const Header = () => {
   return (
@@ -20,13 +23,19 @@ export const Header = () => {
       <nav>
         <ul className="header-ul">
           <li className="header-li">
-            <a className="social-link">LinkedIn</a>
+            <a className="social-link" href="https://linkedin.com/in/tapiwamazarura">
+              <img src={LinkedIn} alt="LinkedIn" className="social-icon" />
+            </a>
           </li>
           <li className="header-li">
-            <a className="social-link">Github</a>
+            <a className="social-link" href="https://github.com/Tapiwamaz">
+              <img src={GithubIcon} alt="Github" className="social-icon" />
+            </a>
           </li>
           <li className="header-li">
-            <a className="social-link">Gmail</a>
+            <a className="social-link">
+              <img src={Gmail} alt="Gmail" className="social-icon" />
+            </a>
           </li>
         </ul>
       </nav>

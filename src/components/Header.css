@@ -1,5 +1,5 @@
 header,
-ul {
+.header-ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,7 +10,6 @@ header {
 }
 .header-ul {
   gap: 1rem;
-  outline: black 1px solid;
 }
 
 .header-li {
@@ -19,4 +18,9 @@ header {
 .nav-link, .social-link {
     cursor: pointer;
 
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
