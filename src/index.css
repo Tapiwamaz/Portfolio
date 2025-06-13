@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 :root {
   font-family: system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,8 +14,12 @@
 
   /* Colours */
   --background: #fbfbfb;
+  --white-highlight : #efefef;
   --text-main: #010101;
   --secondary: #44aa44;
+
+  /* Size */
+  --box-radius: 10px;
 }
 
 * {
@@ -21,7 +27,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 body {
   margin: 0.5rem 3rem;

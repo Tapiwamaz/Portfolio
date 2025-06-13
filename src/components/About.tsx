@@ -5,7 +5,10 @@ export const About = () => {
     <div className="about-section">
       <section className="profile">
         <img className="profile-pic" alt="profile-pic" src="./DP.jpg"></img>
-        <p>Active for work pulse</p>
+        <div className="pulse-container">
+          <p>Active for work pulse</p>
+          <div className="pulse-icon"/>
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
           reiciendis? Ad vero quod id incidunt a quaerat voluptatibus
@@ -16,10 +19,10 @@ export const About = () => {
       <section className="frameworks">
         <h2>Frameworks</h2>
         <ul className="frameworks-ul">
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>NodeJS</li>
-            <li>Python</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>NodeJS</li>
+          <li>Python</li>
         </ul>
       </section>
     </div>

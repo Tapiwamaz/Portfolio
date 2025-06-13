@@ -8,7 +8,7 @@ export const Header = () => {
     <header>
       <h1 className="logo-title">Tapiwa</h1>
       <nav>
-        <ul className="header-ul">
+        <ul className="header-ul nav-links-ul">
           <li className="header-li">
             <a className="nav-link">About Me</a>
           </li>
@@ -33,7 +33,7 @@ export const Header = () => {
             </a>
           </li>
           <li className="header-li">
-            <a className="social-link">
+            <a className="social-link" href="mailto:mazaruratapiwa03@gmail.com">
               <img src={Gmail} alt="Gmail" className="social-icon" />
             </a>
           </li>

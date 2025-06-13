@@ -1,3 +1,9 @@
+.logo-title {
+  font-family: "Allura", cursive;
+  font-style: normal;
+  font-size: 4rem;
+}
+
 header,
 .header-ul {
   display: flex;
@@ -5,9 +11,9 @@ header,
   align-items: center;
 }
 header {
-  outline: 1px solid black;
   padding: 0.25rem;
 }
+
 .header-ul {
   gap: 1rem;
 }
@@ -15,12 +21,70 @@ header {
 .header-li {
   list-style: none;
 }
-.nav-link, .social-link {
-    cursor: pointer;
-
+.nav-link,
+.social-link {
+  cursor: pointer;
 }
+.nav-links-ul {
+  border-radius: 10px;
+  gap: 0;
+}
+
+.nav-links-ul .header-li {
+  color: #5f5f5f;
+  padding: 0.85rem 1rem;
+  background-color: var(--white-highlight);
+}
+.nav-links-ul .header-li:first-of-type,
+.nav-links-ul .header-li:nth-of-type(2){
+  border-right: none;
+}
+
+.nav-links-ul .header-li:last-of-type,
+.nav-links-ul .header-li:nth-of-type(2){
+  border-left: none;
+}
+
+.nav-links-ul .header-li:first-of-type
+{
+ border-top-left-radius: var(--box-radius);
+ border-bottom-left-radius: var(--box-radius);
+}
+.nav-links-ul .header-li:last-of-type
+{
+ border-top-right-radius: var(--box-radius);
+ border-bottom-right-radius: var(--box-radius);
+}
+
+.nav-links-ul .nav-link {
+  position: relative;
+}
+.nav-links-ul .nav-link:hover {
+  color: var(--text-main);
+}
+.nav-links-ul .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.nav-links-ul .nav-link:hover::after {
+  opacity: 1;
+}
+
 .social-icon {
   width: 30px;
   height: 30px;
   vertical-align: middle;
+  transition: all 200ms ease-in;
+}
+.social-icon:hover {
+  scale: 1.2;
 }
