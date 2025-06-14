@@ -62,22 +62,14 @@ header {
 .nav-links-ul .nav-link:hover {
   color: var(--text-main);
 }
-.nav-links-ul .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 5px;
-  height: 5px;
-  background-color: var(--secondary);
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+
+.nav-link {
+  text-decoration: none;
 }
-.nav-links-ul .nav-link:hover::after {
-  opacity: 1;
+.nav-link:visited {
+  color: #5f5f5f;;
 }
+
 
 .social-icon {
   width: 30px;

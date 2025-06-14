@@ -17,15 +17,21 @@
   --white-highlight : #efefef;
   --text-main: #010101;
   --secondary: #44aa44;
+  --std-outline: #404040;
 
   /* Size */
   --box-radius: 10px;
+
+  /* Others */
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+
 }
 
 body {

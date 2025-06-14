@@ -1,0 +1,45 @@
+.education-section {
+  display: flex;
+  flex-direction: column;
+  /* outline: 1px solid red; */
+}
+
+.timeline-item {
+  display: flex;
+  /* gap: 1rem; */
+  /* justify-content: center; */
+}
+
+.timeline-card {
+  flex: 0.3;
+}
+
+/* .education-section .timeline-item:nth-of-type(odd) {
+  justify-content: flex-start;
+}
+.education-section .timeline-item:nth-of-type(odd) .timeline-card {
+   padding: 1rem;
+}
+.education-section .timeline-item:nth-of-type(even) {
+  justify-content: flex-end;
+}
+.education-section .timeline-item:nth-of-type(even) .timeline-card{
+    padding: 1rem;
+} */
+
+
+.line-divider {
+  position: relative;
+  background-color: black;
+  width: 2px;
+}
+
+.line-divider::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: aquamarine;
+
+}

@@ -1,14 +1,15 @@
 .landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
 .main-photo {
-   height: 480px;
-   border-radius: 60%;
-   outline: var(--secondary) 2px solid;
+  height: 480px;
+  border-radius: 60%;
+  margin: 9vh 0;
+  box-shadow: var(--box-shadow);
+  outline: var(--std-outline) 3px solid;
 }
