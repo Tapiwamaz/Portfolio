@@ -16,7 +16,7 @@
 .message-form input,
 .message-form textarea {
   background-color: inherit;
-  border: 1px solid var(--std-outline);
+  border: 2px solid var(--std-outline);
   outline: none;
   border-radius: var(--box-radius);
   font: inherit;
@@ -32,13 +32,16 @@
 
 .message-form textarea {
   min-height: 7rem;
+  resize: none;
 }
 
 .message-form button {
   border-radius: var(--box-radius);
+  outline: var(--std-outline) 2px solid;
   min-height: 2.2rem;
   box-shadow: none;
-  outline: none;
+  /* outline: none; */
+  color: var(--text-main);
   border: none;
   font: inherit;
   background-color: var(--secondary);
@@ -48,4 +51,8 @@
 
 .message-form button:hover {
     opacity: 1;
+}
+
+.message-form .error:focus {
+  border-color: red;
 }

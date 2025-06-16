@@ -19,7 +19,7 @@ export const Header = () => {
             <a className="nav-link">Projects</a>
           </li>
           <li className="header-li">
-            <a className="nav-link">Contact Me</a>
+            <a className="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
       </nav>
