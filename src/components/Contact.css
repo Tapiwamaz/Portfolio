@@ -1,0 +1,51 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 35%;
+  margin: 0 auto;
+  border-radius: var(--box-radius);
+  padding: 1rem;
+}
+
+.message-form input,
+.message-form textarea {
+  background-color: inherit;
+  border: 1px solid var(--std-outline);
+  outline: none;
+  border-radius: var(--box-radius);
+  font: inherit;
+  min-height: 2.5rem;
+  color: var(--text-main);
+  padding: 5px 10px;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  border: 2px solid var(--secondary);
+}
+
+.message-form textarea {
+  min-height: 7rem;
+}
+
+.message-form button {
+  border-radius: var(--box-radius);
+  min-height: 2.2rem;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  font: inherit;
+  background-color: var(--secondary);
+  opacity: 0.9;
+  cursor: pointer
+}
+
+.message-form button:hover {
+    opacity: 1;
+}

@@ -48,6 +48,7 @@ body {
   flex-direction: column;
   flex: 1;
   outline: green solid 2px;
+  padding-bottom: 2rem;
 }
 
 h1 {
