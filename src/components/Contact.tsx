@@ -77,6 +77,8 @@ export const Contact = () => {
         setEmail("");
         setName("");
         setMessage("");
+        toast.success("Email sent")
+        toast("I will get back to you ASAP!", {icon: '🏃🏾‍♂️💨'})
       })
       .catch((e) => console.log("Error sending email: ", e));
   };
