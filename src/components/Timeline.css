@@ -1,8 +1,6 @@
 .timeline-section {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .section-title {
   margin: 1.5rem auto;
@@ -24,20 +22,26 @@
 }
 
 .timeline-card {
-  outline: 2px solid var(--std-outline);
+  outline: var(--white-highlight) solid 2px;
   display: flex;
   border-radius: var(--box-radius);
-  flex: 0.55;
+  flex: 0.75;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--box-shadow);
-}
+  background-color: var(--card-background);
 
+}
+.timeline-item h3 {
+}
 .timeline-duration {
   font-weight: normal;
   font-size: medium;
-  color: #505050;
+  color: var(--secondary);
+}
+
+.timeline-card h4 {
+  color: rgb(120, 120, 120)
 }
 
 .line-divider {

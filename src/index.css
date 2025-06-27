@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  font-family: system-ui, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", system-ui, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,10 +14,11 @@
 
   /* Colours */
   --background: #fbfbfb;
-  --white-highlight : #efefef;
+  --white-highlight : #ddd;
   --text-main: #010101;
   --secondary: #44aa44;
   --std-outline: #404040;
+  --card-background: #f9f9f9;
 
   /* Size */
   --box-radius: 10px;
@@ -42,12 +43,14 @@ body {
   min-height: 100vh;
   background-color: var(--background);
   color: var(--text-main);
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .mid-section {
   display: flex;
   flex-direction: column;
   flex: 1;
-  outline: green solid 2px;
+  /* outline: green solid 2px; */
   padding-bottom: 2rem;
 }
 

@@ -12,28 +12,36 @@ import SQLIcon from "/SQL.svg";
 import PostgresIcon from "/Postgres.svg";
 import PHPIcon from "/PHP.svg";
 import HTMLIcon from "/HTML.svg";
+import HTMLDarkIcon from "/HTMLDark.svg";
+import { useAppContext } from "../AppContext/AppContext";
 
 export const About = () => {
+  const {isDarkMode} = useAppContext();
+
+
   const frameworks = [
     // Frontend
-    { name: "React", icon: ReactIcon, category: "Frontend" },
-    { name: "JavaScript", icon: JSIcon, category: "Frontend" },
-    { name: "TypeScript", icon: TypescriptIcon, category: "Frontend" },
-    { name: "HTML", icon: HTMLIcon, category: "Frontend" },
-    { name: "Tailwind", icon: TailwindIcon, category: "Frontend" },
+    { name: "React", icon: ReactIcon, category: "Frontend", both:true },
+    { name: "JavaScript", icon: JSIcon, category: "Frontend", both:true },
+    { name: "TypeScript", icon: TypescriptIcon, category: "Frontend", both:true },
+    { name: "HTML", icon: HTMLIcon, category: "Frontend" , both:false ,dark :false},
+    { name: "HTML", icon: HTMLDarkIcon, category: "Frontend" , both:false,dark: true},
+    { name: "Tailwind", icon: TailwindIcon, category: "Frontend" , both:true},
 
     // Backend
-    { name: "Node.js", icon: NodeJSIcon, category: "Backend" },
-    { name: "Python", icon: PythonIcon, category: "Backend" },
-    { name: "PHP", icon: PHPIcon, category: "Backend" },
-    { name: "Java", icon: JavaIcon, category: "Backend" },
+    { name: "Node.js", icon: NodeJSIcon, category: "Backend" , both:true},
+    { name: "Python", icon: PythonIcon, category: "Backend" , both:true},
+    { name: "PHP", icon: PHPIcon, category: "Backend" , both:true},
+    { name: "Java", icon: JavaIcon, category: "Backend" , both:true},
 
     // Database & Cloud
-    { name: "SQL", icon: SQLIcon, category: "Database" },
-    { name: "PostgreSQL", icon: PostgresIcon, category: "Database" },
-    { name: "Firebase", icon: FirebaseIcon, category: "Cloud" },
-    { name: "Azure", icon: AzureIcon, category: "Cloud" },
-  ];
+    { name: "SQL", icon: SQLIcon, category: "Database" , both:true},
+    { name: "PostgreSQL", icon: PostgresIcon, category: "Database" , both:true},
+    { name: "Firebase", icon: FirebaseIcon, category: "Cloud", both:true },
+    { name: "Azure", icon: AzureIcon, category: "Cloud" , both:true },
+  ].filter(f => f.both || f.dark===isDarkMode);
+
+
 
   return (
     <div className="about-section" id="about">

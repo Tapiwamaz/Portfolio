@@ -1,6 +1,7 @@
 .logo-title {
-  font-family: "Allura", cursive;
+  font-family: "Sour Gummy", cursive;
   font-style: normal;
+  font-weight: 250;
   font-size: 4rem;
 }
 
@@ -76,7 +77,41 @@ header {
   height: 30px;
   vertical-align: middle;
   transition: all 200ms ease-in;
+  position: relative;
 }
 .social-icon:hover {
   scale: 1.2;
 }
+.light-mode-btn {
+  border-radius: var(--box-radius);
+}
+
+.light-mode-btn .social-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.githubDark {
+  fill: #ff0000; /* Change to your desired color */
+  transition: fill 0.3s ease-in-out;
+}
+.dark-mode-label {
+  position: absolute;
+  font-size: 0.7rem;
+  padding: 0 0.3rem;
+  top: -17px;
+  visibility: hidden;
+  left: -10px;
+  border-radius: 5px;
+  width: max-content;
+  border: 1px solid var(--text-main);
+  transition: visibility 0.2s ease-in-out;
+}
+
+.moon:hover > .dark-mode-label {
+  visibility: visible;
+  
+
+}
+
+
