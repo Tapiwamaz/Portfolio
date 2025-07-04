@@ -5,11 +5,12 @@
 }
 
 .profile {
-  flex: 0.35;
+  flex: 0.45;
   height: fit-content;
 }
 .frameworks {
-  flex: 0.35;
+  flex: 0.25;
+  height: fit-content;
 }
 
 .about-section section {
@@ -22,11 +23,11 @@
 
 .profile {
   padding: 1rem;
-  align-items: center;
   gap: 0.25rem;
 }
 .profile-pic {
   width: 37px;
+  align-self: center;
   border-radius: 50%;
   outline: var(--std-outline) solid 2px;
 }
@@ -55,6 +56,8 @@
   animation-duration: 1000ms;
 }
 
+
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -70,6 +73,15 @@
   }
 }
 
+.interests-list {
+  list-style: none;
+}
+.interest-list-li {
+  margin-left: 1rem;
+  /* border: 1px solid green; */
+  /* text-decoration: underline; */
+}
+/* ________________________________________________________________________________- */
 .frameworks {
   padding: 1rem;
   display: flex;

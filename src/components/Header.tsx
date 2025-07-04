@@ -4,7 +4,7 @@ import Gmail from "/Gmail.svg";
 import Sun from "/Sun1.svg";
 import LinkedIn from "/LinkedIn.svg";
 
-import { Moon, GitHubDarkIcon, LinkedDark } from "./Icons";
+import { Moon, GitHubDarkIcon, LinkedDark, CV } from "./Icons";
 import { useAppContext } from "../AppContext/AppContext";
 
 export const Header = () => {
@@ -79,18 +79,27 @@ export const Header = () => {
               {!isDarkMode && (
                 <img src={GithubIcon} alt="Github" className="social-icon" />
               )}
+              {isDarkMode && (
+                <div className="social-icon">
+                  <GitHubDarkIcon />
+                </div>
+              )}
             </a>
-            {isDarkMode && (
-              <div className="social-icon">
-                <GitHubDarkIcon />
-              </div>
-            )}
           </li>
+
           <li className="header-li">
             <a className="social-link" href="mailto:mazaruratapiwa03@gmail.com">
               <img src={Gmail} alt="Gmail" className="social-icon" />
             </a>
           </li>
+          <li className="header-li">
+            <a className="social-link" href="/Resume.pdf"  target="_blank">
+              <div className="social-icon">
+                <CV />
+              </div>
+            </a>
+          </li>
+
           <li className="header-li">
             <a className="social-link light-mode-btn">
               {isDarkMode ? (

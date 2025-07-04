@@ -1,0 +1,17 @@
+.live-app-container {  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+
+  width: 100%;
+  padding: 1rem;
+
+}
+
+iframe {
+  border: none;
+  border-radius: var(--box-radius);
+  width: 100%;
+  height: 100%;
+  outline: var(--white-highlight) 2px solid;
+}

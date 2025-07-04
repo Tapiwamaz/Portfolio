@@ -13,7 +13,7 @@
   background-color: var(--card-background);
 }
 .projects-section a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .project-desc,
@@ -28,16 +28,41 @@
   gap: 0.25rem;
 }
 .project-links {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 .project-site-btn {
-    background-color: var(--text-main);
-    border-radius: var(--box-radius);
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    color: var(--background);
+  border-radius: var(--box-radius);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-main);
+  outline: var(--text-main) 2px solid;
+  background-color: var(--background);
+  transition: all 0.15s ease-in-out;
+}
+.project-site-btn span {
+  display: flex;
+  align-items: center;
+}
+.project-site-btn:hover {
+  background-color: var(--text-main);
+  color: var(--background);
+  outline: none;
+  scale: 1.1;
+}
+.arrow {
+  stroke: var(--text-main);
+}
+.project-site-btn:hover .arrow {
+  stroke: var(--background);
+}
+.project-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }

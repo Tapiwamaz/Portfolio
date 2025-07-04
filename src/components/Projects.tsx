@@ -1,7 +1,8 @@
 import "./Projects.css";
 import GithubIcon from "/Github.svg";
-import { GitHubDarkIcon } from "./Icons";
+import { Arrow, GitHubDarkIcon } from "./Icons";
 import { useAppContext } from "../AppContext/AppContext";
+import LiveApp from "./LiveApp";
 
 const Projects = () => {
   const { isDarkMode } = useAppContext();
@@ -20,23 +21,38 @@ const Projects = () => {
             fugiat. Fugiat!
           </p>
           <div className="project-links">
-            <a href="#" className="project-site-btn">
-              View Site
+            <a
+              href="https://delightful-forest-0475dad03.5.azurestaticapps.net/"
+              className="project-site-btn"
+              target="_blank"
+            >
+              <span>
+                View Site
+                <Arrow />
+              </span>
             </a>
             {!isDarkMode && (
-              <a href="#">
+              <a
+                href="https://github.com/Tapiwamaz/SDP-project"
+                target="_blank"
+              >
                 {" "}
                 <img src={GithubIcon} alt="Github" className="social-icon" />
               </a>
             )}
             {isDarkMode && (
-              <a className="social-icon" href="https://github.com/Tapiwamaz">
+              <a
+                className="social-icon"
+                href="https://github.com/Tapiwamaz/SDP-project"
+              >
                 <GitHubDarkIcon />
               </a>
             )}
           </div>
         </div>
-        <div className="project-demo"></div>
+        <div className="project-demo">
+          <LiveApp siteUrl="https://delightful-forest-0475dad03.5.azurestaticapps.net/" />
+        </div>
       </div>
     </section>
   );
