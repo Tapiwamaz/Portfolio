@@ -71,7 +71,7 @@ export const About = () => {
           <div className="pulse-icon" />
         </div>
         <p className="greeting"> Hi, I'm Tapiwa</p>
-        <p>
+        <p className="yap">
           <strong> I like to build software with purpose.</strong> With a BSc in
           Computer Science and a deep love for problem-solving, I develop
           impactful solutions—from intelligent systems to scalable applications.
@@ -84,7 +84,7 @@ export const About = () => {
           research, and creations—each one a step toward building tech that
           matters.
         </p>
-        <ol className="interests-list">
+        <ol className="interests-list yap">
           What I'm Into:
           <li className="interest-list-li">🤖 Machine Learning & AI </li>
           <li className="interest-list-li">💻 Full-Stack Development </li>
@@ -92,7 +92,7 @@ export const About = () => {
           <li className="interest-list-li">🌍 Ethical & Responsible Tech </li>
         </ol>
 
-        <p>Let's build something meaningful together!</p>
+        <p className="yap">Let's build something meaningful together!</p>
       </section>
 
       <section className="frameworks">

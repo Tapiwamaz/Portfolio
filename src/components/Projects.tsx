@@ -14,11 +14,17 @@ const Projects = () => {
           <span>2024</span>
           <h3>Univents</h3>
           <h4>Campus Event Mangement Platform</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            blanditiis possimus, beatae perferendis iste repellendus ea aperiam
-            tenetur animi rem! Sequi veniam, voluptas sit iste ea autem iusto
-            fugiat. Fugiat!
+          <p className="yap">
+            Univents is a dynamic campus event management platform designed to
+            streamline event organization and attendance tracking for
+            universities. Built with React for the frontend and powered by
+            Firebase for real-time data management, the system offers features
+            like event creation, RSVP management, and an admin control
+            dashboards. Leveraging Microsoft Azure for cloud hosting and
+            scalable storage, Univents ensures reliability and performance even
+            during peak usage. This project showcases my ability to develop
+            full-stack solutions with modern technologies while prioritizing
+            user experience and scalability.
           </p>
           <div className="project-links">
             <a
