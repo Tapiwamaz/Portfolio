@@ -1,0 +1,50 @@
+.carousel-container {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+}
+
+.carousel {
+    display: flex;
+    flex: 1;
+    /* padding: pa; */
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid var(--white-highlight);
+    border-radius: 10px;
+    padding: 0.5rem 0.85rem;
+    gap: 0.2rem;
+ 
+}
+.item-title {
+    color: var(--secondary);
+}
+.item-time {
+    color: gray;
+}
+
+.bubbles-container {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    gap: 10px;
+    transition: all ease-in-out 250ms;
+    margin-top: 1rem;
+    
+}
+
+.bubble {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    outline: var(--text-main) 1px dashed;
+    background-color: var(--white-highlight);
+    transition: all ease-in-out 250ms;
+}
+
+.active-bubble {
+    background-color: var(--secondary);
+}

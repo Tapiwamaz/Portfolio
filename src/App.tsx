@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import { AppProvider } from "./AppContext/AppContext";
 import Projects from "./components/Projects";
+import Carousel from "./components/Carousel";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -22,6 +23,7 @@ function App() {
           <About />
           <Projects />
           <Timeline />
+          <Carousel/>
           <Contact />
         </section>
         <footer></footer>

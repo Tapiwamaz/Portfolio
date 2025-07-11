@@ -23,8 +23,8 @@ export const Header = () => {
       //  dark mode
       root.style.setProperty("--background", "#010101");
       root.style.setProperty("--text-main", "#fbfbfb");
-      root.style.setProperty("--white-highlight", "#121212");
-      root.style.setProperty("--card-background", "#050505");
+      root.style.setProperty("--white-highlight", "#141414");
+      root.style.setProperty("--card-background", "#010000");
     }
 
     setIsDarkMode(!isDarkMode);

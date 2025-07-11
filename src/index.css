@@ -37,7 +37,7 @@
 }
 
 body {
-  margin: 0.5rem 3rem;
+  padding: 0.5rem 3rem;
   display: flex;
   flex-direction: column;
   min-width: 320px;
@@ -61,5 +61,4 @@ h1 {
 }
 .yap {
   font-size: clamp(0.2rem,2.5vw,0.85rem)
-  
 }
