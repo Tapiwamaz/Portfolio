@@ -56,7 +56,7 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav>
+      <nav className="social-links-nav">
         <ul className="header-ul">
           <li className="header-li">
             <a

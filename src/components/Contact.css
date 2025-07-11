@@ -37,10 +37,8 @@
 
 .message-form button {
   border-radius: var(--box-radius);
-  /* outline: var(--std-outline) 2px solid; */
   min-height: 2.2rem;
   box-shadow: var(--box-shadow);
-  /* outline: none; */
   color: var(--text-main);
   border: none;
   font: inherit;
@@ -55,4 +53,11 @@
 
 .message-form .error:focus {
   border-color: red;
+}
+
+@media (max-width:768px) {
+  .message-form {
+    width: 100%;
+  }
+  
 }
