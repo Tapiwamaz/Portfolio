@@ -11,7 +11,6 @@ import Projects from "./components/Projects";
 import Carousel from "./components/Carousel";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <main>
       <AppProvider>
@@ -23,7 +22,7 @@ function App() {
           <About />
           <Projects />
           <Timeline />
-          <Carousel/>
+          <Carousel />
           <Contact />
         </section>
         <footer></footer>
