@@ -16,16 +16,6 @@ header {
   border-bottom: var(--std-outline) 2px solid;
 }
 
-@media (max-width: 768px) {
-  .social-links-nav,
-  .logo-title {
-    display: none;
-  }
-  header {
-    border: none;
-  }
-}
-
 .header-ul {
   gap: 1rem;
 }
@@ -36,6 +26,7 @@ header {
 .nav-link,
 .social-link {
   cursor: pointer;
+  text-decoration: none;
 }
 .nav-links-ul {
   border-radius: 10px;
@@ -80,8 +71,9 @@ header {
   text-decoration: none;
   font-size: clamp(0.7rem, 1vw, 1rem);
 }
-.nav-link:visited,.nav-link:focus {
-  color: #5f5f5f;
+.nav-link:visited,
+.nav-link:focus {
+  color: var(--std-outline);
 }
 
 .social-icon {
@@ -122,4 +114,91 @@ header {
 
 .moon:hover > .dark-mode-label {
   visibility: visible;
+}
+
+/* Burger menu button */
+.menu {
+  /* position: fixed; */
+  /* left: 0;
+  top: 0; */
+  display: none;
+  z-index: 3;
+  --s: 20px; /* control the size */
+  --c: var(--text-main); /* the color */
+  height: var(--s);
+  width: fit-content;
+  margin: 1rem 0 0 1rem;
+  aspect-ratio: 1;
+  border: none;
+  padding: 0;
+  border-inline: calc(var(--s) / 2) solid #0000;
+  box-sizing: content-box;
+  --_g1: linear-gradient(var(--c) 20%, #0000 0 80%, var(--c) 0) no-repeat
+    content-box border-box;
+  --_g2: radial-gradient(circle closest-side at 50% 12.5%, var(--c) 95%, #0000)
+    repeat-y content-box border-box;
+  background: var(--_g2) left var(--_p, 0px) top,
+    var(--_g1) left calc(var(--s) / 10 + var(--_p, 0px)) top,
+    var(--_g2) right var(--_p, 0px) top,
+    var(--_g1) right calc(var(--s) / 10 + var(--_p, 0px)) top;
+  background-size: 20% 80%, 40% 100%;
+  position: relative;
+  clip-path: inset(0 25%);
+  -webkit-mask: linear-gradient(90deg, #0000, #000 25% 75%, #0000);
+  cursor: pointer;
+  transition: background-position 0.3s var(--_s, 0.3s),
+    clip-path 0s var(--_s, 0.6s);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.menu:before,
+.menu:after {
+  content: "";
+  position: absolute;
+  border-radius: var(--s);
+  inset: 40% 0;
+  background: var(--c);
+  transition: transform 0.3s calc(0.3s - var(--_s, 0.3s));
+}
+
+.menu:checked {
+  clip-path: inset(0);
+  --_p: calc(-1 * var(--s));
+  --_s: 0s;
+}
+.menu:checked:before {
+  transform: rotate(45deg);
+}
+.menu:checked:after {
+  transform: rotate(-45deg);
+}
+.menu:focus-visible {
+  clip-path: none;
+  -webkit-mask: none;
+  border: none;
+  outline: 2px solid var(--c);
+  outline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+  .social-links-nav,
+  .logo-title,
+  .page-nav {
+    display: none;
+  }
+  header {
+    border: none;
+    justify-content: flex-start;
+    position: fixed;
+    /* border: 1px white solid; */
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-bottom: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .menu {
+    display: block;
+  }
 }

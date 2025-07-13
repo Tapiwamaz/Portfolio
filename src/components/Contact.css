@@ -38,7 +38,6 @@
 .message-form button {
   border-radius: var(--box-radius);
   min-height: 2.2rem;
-  box-shadow: var(--box-shadow);
   color: var(--text-main);
   border: none;
   font: inherit;

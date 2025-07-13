@@ -8,31 +8,22 @@ import { Moon, GitHubDarkIcon, LinkedDark, CV } from "./Icons";
 import { useAppContext } from "../AppContext/AppContext";
 
 export const Header = () => {
-  const { isDarkMode, setIsDarkMode } = useAppContext();
+  const { isDarkMode, toggleTheme, asideOn, toggleAside } = useAppContext();
 
-  const toggleTheme = () => {
-    const root = document.documentElement;
-
-    if (isDarkMode) {
-      // light mode
-      root.style.setProperty("--background", "#fbfbfb");
-      root.style.setProperty("--text-main", "#010101");
-      root.style.setProperty("--card-background", "#f9f9f9");
-      root.style.setProperty("--white-highlight", "#efefef");
-    } else {
-      //  dark mode
-      root.style.setProperty("--background", "#010101");
-      root.style.setProperty("--text-main", "#fbfbfb");
-      root.style.setProperty("--white-highlight", "#141414");
-      root.style.setProperty("--card-background", "#010000");
-    }
-
-    setIsDarkMode(!isDarkMode);
-  };
   return (
     <header>
+      <input
+        type="checkbox"
+        role="button"
+        aria-label="Display the menu"
+        className="menu"
+        checked={asideOn}
+        onClick={() => {
+          toggleAside();
+        }}
+      ></input>
       <h1 className="logo-title">Tapiwa</h1>
-      <nav>
+      <nav className="page-nav">
         <ul className="header-ul nav-links-ul">
           <li className="header-li">
             <a className="nav-link" href="#about">
@@ -93,7 +84,7 @@ export const Header = () => {
             </a>
           </li>
           <li className="header-li">
-            <a className="social-link" href="/Resume.pdf"  target="_blank">
+            <a className="social-link" href="/Resume.pdf" target="_blank">
               <div className="social-icon">
                 <CV />
               </div>

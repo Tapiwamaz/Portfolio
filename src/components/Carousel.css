@@ -1,7 +1,13 @@
 .carousel-container {
     display: flex;
-    /* border: 1px solid red; */
     flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .carousel-container {
+        display: none;
+    }
+    
 }
 
 .carousel {

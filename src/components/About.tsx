@@ -63,7 +63,7 @@ export const About = () => {
   ].filter((f) => f.both || f.dark === isDarkMode);
 
   return (
-    <div className="about-section" id="about">
+    <div className="about-section">
       <section className="profile">
         <img className="profile-pic" alt="profile-pic" src="./DP.jpg"></img>
         <div className="pulse-container">
