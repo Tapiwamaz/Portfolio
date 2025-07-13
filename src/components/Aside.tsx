@@ -34,7 +34,7 @@ const Aside = () => {
               </a>
             </li>
             <li className="aside-header-li">
-              <a className="aside-nav-link" href="#timeline">
+              <a className="aside-nav-link" href="#carousel">
                 Timeline
               </a>
             </li>

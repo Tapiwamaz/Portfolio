@@ -49,7 +49,7 @@ const Carousel = () => {
     }
   };
   return (
-    <section className="carousel-container">
+    <section className="carousel-container" id="carousel">
       <h2 className="section-title">Timeline</h2>
       <section className="carousel">
         <article

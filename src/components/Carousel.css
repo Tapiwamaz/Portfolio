@@ -46,7 +46,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    outline: var(--text-main) 1px dashed;
+    outline: var(--text-main) 1px solid;
     background-color: var(--white-highlight);
     transition: all ease-in-out 250ms;
 }
