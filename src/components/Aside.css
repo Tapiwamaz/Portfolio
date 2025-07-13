@@ -17,7 +17,11 @@
   opacity: 1;
   visibility: visible;
 }
-
+@media (min-width: 768px) {
+  .aside-section {
+    display: none;
+  }
+}
 
 .aside {
   display: flex;
