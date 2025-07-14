@@ -11,7 +11,7 @@ export const Header = () => {
   const { isDarkMode, toggleTheme, asideOn, toggleAside } = useAppContext();
 
   return (
-    <header>
+    <header className={asideOn ? "header-aside-on" : ""}>
       <input
         type="checkbox"
         role="button"

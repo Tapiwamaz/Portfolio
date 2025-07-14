@@ -34,15 +34,16 @@ const Aside = () => {
               </a>
             </li>
             <li className="aside-header-li">
-              <a className="aside-nav-link" href="#carousel">
-                Timeline
-              </a>
-            </li>
-            <li className="aside-header-li">
               <a className="aside-nav-link" href="#projects">
                 Projects
               </a>
             </li>
+            <li className="aside-header-li">
+              <a className="aside-nav-link" href="#carousel">
+                Timeline
+              </a>
+            </li>
+
             <li className="aside-header-li">
               <a className="aside-nav-link" href="#contact">
                 Contact Me

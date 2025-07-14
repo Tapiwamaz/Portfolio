@@ -118,15 +118,13 @@ header {
 
 /* Burger menu button */
 .menu {
-  /* position: fixed; */
-  /* left: 0;
-  top: 0; */
   display: none;
   z-index: 3;
   --s: 20px; /* control the size */
   --c: var(--text-main); /* the color */
   height: var(--s);
-  width: fit-content;
+  /* width: fit-content; */
+  width: 2rem;
   margin: 1rem 0 0 1rem;
   aspect-ratio: 1;
   border: none;
@@ -191,11 +189,15 @@ header {
     border: none;
     justify-content: flex-start;
     position: fixed;
-    /* border: 1px white solid; */
     width: 100%;
     left: 0;
     top: 0;
-    padding-bottom: 1.6rem;
+    z-index: 0;
+    padding-bottom: 1.5782rem;
+    transition: all 320ms ease-in;
+    /* height: 6vh; */
+  }
+  .header-aside-on {
     background-color: rgba(0, 0, 0, 0.4);
   }
   .menu {

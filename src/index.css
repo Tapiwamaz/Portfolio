@@ -17,7 +17,8 @@
   --background: #fbfbfb;
   --white-highlight: #ddd;
   --text-main: #010101;
-  --secondary: rgba(170, 68, 170, 0.898);
+  --secondary: rgba(120, 170, 150, 0.898);
+  /* --secondary: rgba(170, 68, 170, 0.898); */
   --std-outline: #404040;
   --card-background: #f9f9f9;
 

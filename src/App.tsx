@@ -17,7 +17,7 @@ function App() {
   // const {} = useAppContext()
 
   const handleScrollVisibility = () => {
-    if (window.pageYOffset > 750) {
+    if (window.pageYOffset > 650) {
       setScrollVisibility(true);
     } else {
       setScrollVisibility(false);
