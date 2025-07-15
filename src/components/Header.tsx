@@ -4,7 +4,7 @@ import Gmail from "/Gmail.svg";
 import Sun from "/Sun1.svg";
 import LinkedIn from "/LinkedIn.svg";
 
-import { Moon, GitHubDarkIcon, LinkedDark, CV } from "./Icons";
+import { Moon, GitHubDarkIcon, LinkedDark,  Resume } from "./Icons";
 import { useAppContext } from "../AppContext/AppContext";
 
 export const Header = () => {
@@ -54,7 +54,7 @@ export const Header = () => {
               className="social-link"
               href="https://linkedin.com/in/tapiwamazarura"
             >
-              {" "}
+
               {isDarkMode && (
                 <div className="social-icon">
                   <LinkedDark />
@@ -86,7 +86,7 @@ export const Header = () => {
           <li className="header-li">
             <a className="social-link" href="/Resume.pdf" target="_blank">
               <div className="social-icon">
-                <CV />
+                <Resume />
               </div>
             </a>
           </li>

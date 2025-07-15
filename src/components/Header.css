@@ -1,5 +1,5 @@
 .logo-title {
-  font-family: "Sour Gummy", cursive;
+  font-family: "Montserrat" ,cursive;
   font-style: normal;
   font-weight: 250;
   font-size: clamp(0.5rem, 20vw, 4rem);
@@ -22,6 +22,7 @@ header {
 
 .header-li {
   list-style: none;
+  position: relative;
 }
 .nav-link,
 .social-link {
@@ -89,6 +90,7 @@ header {
 .light-mode-btn {
   border-radius: var(--box-radius);
 }
+
 
 .light-mode-btn .social-icon {
   width: 35px;
@@ -179,7 +181,7 @@ header {
   outline-offset: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .social-links-nav,
   .logo-title,
   .page-nav {
@@ -193,9 +195,8 @@ header {
     left: 0;
     top: 0;
     z-index: 0;
-    padding-bottom: 1.5782rem;
+    padding-bottom: 2.61vh;
     transition: all 320ms ease-in;
-    /* height: 6vh; */
   }
   .header-aside-on {
     background-color: rgba(0, 0, 0, 0.4);

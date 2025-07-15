@@ -1,7 +1,7 @@
 import { useAppContext } from "../AppContext/AppContext";
 import "./Aside.css";
 // icons
-import { GitHubDarkIcon, LinkedDark, CV } from "./Icons";
+import { GitHubDarkIcon, LinkedDark, Resume } from "./Icons";
 // svgs
 import GithubIcon from "/Github.svg"; // Import the SVG file;
 import Gmail from "/Gmail.svg";
@@ -105,7 +105,7 @@ const Aside = () => {
                 target="_blank"
               >
                 <div className="social-icon">
-                  <CV />
+                  <Resume />
                 </div>
                 <label>Resume</label>
               </a>

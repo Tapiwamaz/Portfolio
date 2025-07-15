@@ -12,3 +12,11 @@ declare module '*.svg' {
   interface ImportMeta {
     readonly env: ImportMetaEnv;
   }
+  
+  interface TimelineItem {
+    time: string;
+    location: string;
+    title: string;
+    content: string;
+    image: string;
+  }

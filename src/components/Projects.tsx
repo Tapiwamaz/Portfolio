@@ -11,7 +11,7 @@ const Projects = () => {
       <h2 className="section-title">Projects</h2>
       <div className="project-container">
         <div className="project-desc">
-          <span>2024</span>
+          <span className="project-year">2024</span>
           <h3>Univents</h3>
           <h4>Campus Event Mangement Platform</h4>
           <p className="yap">

@@ -17,7 +17,7 @@
   --background: #fbfbfb;
   --white-highlight: #ddd;
   --text-main: #010101;
-  --secondary: rgba(120, 170, 150, 0.898);
+  --secondary: rgba(10, 170, 150, 0.898);
   /* --secondary: rgba(170, 68, 170, 0.898); */
   --std-outline: #404040;
   --card-background: #f9f9f9;
@@ -59,7 +59,7 @@ h1 {
   line-height: 1.1;
 }
 .yap {
-  font-size: clamp(0.2rem, 2.5vw, 0.85rem);
+  font-size: clamp(0.3rem, 2.5vw, 0.85rem);
 }
 
 .to-top-btn {
@@ -84,14 +84,16 @@ h1 {
 
 @keyframes btn {
   0% {
-    opacity: 0;
+    opacity: 0.7;
     scale: 1;
     display: none;
+    translate: 0 5px;
   }
   100% {
     opacity: 1;
     scale: 1.1;
     display: block;
+    translate: 0 -5px;
   }
 }
 
